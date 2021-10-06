@@ -19,6 +19,8 @@ const selectNav = id => {
 const body = document.querySelector('body');
 body.addEventListener('click', e => {
   if (e.target.matches('.external')) return;
+  // Fixed my a links not working
+  if (e.target.target === "_blank") return;
 
   e.preventDefault();
 
@@ -31,13 +33,3 @@ body.addEventListener('click', e => {
     })
   }
 });
-
-
-/* Waypoints */
-['jumbo', 'about', ].forEach(id => {
-  console.log(id)
-  new Waypoint({
-    element: document.getElementById(id),
-    handler: () => {selectNav('#' + id)}
-  })
-})

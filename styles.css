@@ -30,6 +30,8 @@ nav {
 
 nav>ul {
   margin: 0;
+  /* display: flex; */
+  /* z-index: 100; */
 }
 
 nav>ul>li {
@@ -41,6 +43,7 @@ nav>ul>li {
 
 nav>ul>li>a {
   line-height: 32px;
+  font-size: 0.9em;
   /* border: solid green 1px; */
   border-radius: 7px;
   padding: 14px;
@@ -157,12 +160,17 @@ main > section {
   justify-content: space-between;
   /* border: solid green 1px; */
   min-height: 450px;
-  padding: 10px
+  padding: 10px;
+  width: 33.33%;
 }
 
 .card > img {
-  height: 170px;
-  /* width: 200px; */
+  /* max-height: 170px; */
+  max-width: 100%;
+}
+
+.card > p {
+  width: 80%;
 }
 
 .card > button {
