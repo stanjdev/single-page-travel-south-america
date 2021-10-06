@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Helvetica;
+  color: white;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0 100px 0 100px;
+  background-color: black;
+}
+
+.nav-bar {
+  display: flex;
+  flex: row;
+}
+
+nav {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 20px 0 0 0;
+}
+
+nav>ul {
+  margin: 0;
+}
+
+nav>ul>li {
+  list-style: none;
+  /* border: solid white 1px; */
+  text-align: center;
+  padding: 12px 0 12px 0;
+}
+
+nav>ul>li>a {
+  line-height: 32px;
+  /* border: solid green 1px; */
+  border-radius: 7px;
+  padding: 14px;
+  color: white;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+nav>ul>li>a:hover {
+  background-color: mediumvioletred;
+}
+
+a {
+  color: white;
+}
+
+h3 {
+  margin: 20px 0 10px 0;
+}
+
+main > section {
+  display: block;
+  min-height: 100vh;
+  overflow: auto;
+  /* border: green solid 1px; */
+  overflow-x: hidden;
+}
+
+#jumbo {
+  min-height: 500px;
+  height: 100vh;
+  background-image: url("https://cdn.the-scientist.com/assets/articleNo/67860/hImg/39214/banner-southamerica-x.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid orange; */
+  /* Other nice images:
+  https://geology.com/world/south-america-satellite-image.shtml
+  
+  */
+}
+
+#jumbo > h1 {
+  position: relative;
+  left: 100px;
+}
+
+
+.country>h1, #cards>h1 {
+  text-align: center;
+  margin: 50px 0 -50px 0;
+}
+
+
+#about-photo {
+  background-image: url("https://www.nationsonline.org/maps/south-america-map.jpg");
+  opacity: 0.5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#about {
+  display: flex;
+  min-height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#about>h1 {
+  margin: 50px 0 50px 0;
+}
+
+#about > div {
+  height: 100vh; 
+}
+
+#about {
+  /* border: solid orange 1px; */
+  width: inherit;
+}
+
+#about>section {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* border: 1px solid pink; */
+  position: absolute;
+  width: 79%;
+}
+
+.section-text>ul>li {
+  list-style: none;
+  line-height: 2;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* border: solid orange 1px; */
+  width: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* border: solid green 1px; */
+  min-height: 450px;
+  padding: 10px
+}
+
+.card > img {
+  height: 170px;
+  /* width: 200px; */
+}
+
+.card > button {
+  color: white;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid pink; */
+  min-height: inherit;
+  min-width: 50%;
+}
+
+.section-img {
+  /* height: 100%; */
+  width: 100%;
+}
+
+.section-container {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: orange 1px solid; */
+}
+
+.right-align {
+  flex-direction: row-reverse;
+}
+
+.right-align>figure {
+  margin-right: 0;
+}
+
+.right-align>.section-text {
+  margin-right: 20px;
+}
+
+.left-align>figure {
+  margin-left: 0;
+}
+
+.left-align>.section-text {
+  margin-left: 20px;
+}
+
+.section-container > * {
+  /* padding: 0 20px 0 0; */
+}
+
+#explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#explore > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#explore > h1 {
+  margin-bottom: 20px;
+}
+
+#explore > form > input, #explore > form > textarea {
+  width: 250px;
+  padding: 7px;
+  margin: 10px 0 10px 0;
+  border-radius: 7px;
+  font-family: "Helvetica";
+}
+
+footer {
+  padding: 75px 0 75px 0;
+  /* border: 1px solid gold; */
+  min-height: 70vh;
+}
+
+a.selected {
+  background-color: rgba(125, 125, 125, 0.5);
+  color: rgb(240, 141, 141);
+}
+
+.book-now, .card>button {
+  margin-top: 20px;
+  background-color: mediumvioletred;
+  border-radius: 7px;
+  padding: 15px 20px;
+  text-decoration: none;
+}
